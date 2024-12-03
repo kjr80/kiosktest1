@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+<!--Refreshes index.html after 180 seconds-->
+  <meta http-equiv="refresh" content="180;url=index.html">  
+<!--Creates 3s fade-in animation-->
+  <style>
+    body {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>  
+</head>
+
+<body>
+    <ul>
+        <li><a href="wordchoice.html">Back</a></li>
+    <li style="float:left"><p>Weltschmertz</li>
+  </ul>
+
+  <h1>Weltschmertz</h1>
+  <p>mental depression or apathy caused by comparison of the actual state of the world with an ideal state</p>
+
+  <br>
+  <br>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <figure2>
+      <img src="badworld1.jpg" style="width:100%">
+    <!--<div class="text">Caption Text</div>-->
+    </figure2>
+  </div>
+
+  <div class="mySlides fade">
+    <figure2>
+      <img src="badworld2.jpg" style="width:100%">
+    <!--<div class="text">Caption Text</div>-->
+    </figure2>
+  </div>
+
+  <div class="mySlides fade">
+    <figure2>
+      <img src="badworld3.jpg" style="width:100%">
+    <!--<div class="text">Caption Text</div>-->
+    </figure2>
+  </div>
+
+  <div class="mySlides fade">
+    <figure2>
+      <img src="badworld4.jpg" style="width:100%">
+    <!--<div class="text">Caption Text</div>-->
+    </figure2>
+  </div>
+
+  <div class="mySlides fade">
+    <figure2>
+      <img src="badworld5.jpg" style="width:100%">
+    <!--<div class="text">Caption Text</div>-->
+    </figure2>
+  </div>
+
+    </div>
+
+  <p2>ieifvoehvrh30h</p2>
+  
+    <script>
+
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 8000); // Change image every 8 seconds
+      }
+      
+      </script>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+<!--Refreshes index.html after 180 seconds-->
+  <meta http-equiv="refresh" content="180;url=index.html">  
+<!--Creates 3s fade-in animation-->
+  <style>
+    body {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>  
+</head>
+
+<body>
+    <ul>
+        <li><a href="wordchoice.html">Back</a></li>
+    <li style="float:left"><p>Opia</li>
+  </ul>
+
+  <h1>Opia</h1>
+  <p>the ambiguous intensity of eye contact, somehow feeling both intrusive and vulnerable</p>
+
+  <br>
+  <br>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <figure1>
+      <img src="eyes1.jpg" style="width:100%">
+    <!--<div class="text">Caption Text</div>-->
+    </figure1>
+  </div>
+
+  <div class="mySlides fade">
+    <figure1>
+      <img src="eyes2.jpg" style="width:100%">
+    <!--<div class="text">Caption Text</div>-->
+    </figure1>
+  </div>
+
+  <div class="mySlides fade">
+    <figure1>
+      <img src="eyes3.jpg" style="width:100%">
+    <!--<div class="text">Caption Text</div>-->
+    </figure1>
+  </div>
+
+  <div class="mySlides fade">
+    <figure1>
+      <img src="eyes4.jpg" style="width:100%">
+    <!--<div class="text">Caption Text</div>-->
+    </figure1>
+  </div>
+
+    </div>
+
+  <p1>iwjkdwihdwkncoij</p1>
+  
+    <script>
+
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 8000); // Change image every 8 seconds
+      }
+      
+      </script>
+
+   
+
+</body>
+</html>

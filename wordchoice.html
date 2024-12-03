@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+<!--Refreshes index.html after 180 seconds-->
+  <meta http-equiv="refresh" content="180;url=index.html">  
+<!--Creates 3s fade-in animation-->
+  <style>
+    body {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>  
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Back</a></li>
+    <li style="float:left"><p>Word Choices</li>
+  </ul>
+
+  <div class="grid-container">
+    <div class="grid-item"><a href="word1.html" class="button">Chrysalism</a></div>
+    <div class="grid-item"><a href="word2.html" class="button">Duende</a></div>
+    <div class="grid-item"><a href="word3.html" class="button">L'appel du Vide</a></div>
+    <div class="grid-item"><a href="word4.html" class="button">Occhialism</a></div>
+    <div class="grid-item center-item">Have you ever felt an emotion that you just can't put into words? We've all felt that frustration before. Start to gain some clarity by clicking on the surrounding word options! Make sure you scroll down on each page to learn about each word!</div>
+    <div class="grid-item"><a href="word5.html" class="button">Opia</a></div>
+    <div class="grid-item"><a href="word6.html" class="button">Ruinenlust</a></div>
+    <div class="grid-item"><a href="word7.html" class="button">Sonder</a></div>
+    <div class="grid-item"><a href="word8.html" class="button">Weltschmertz</a></div>
+</div>
+
+</body>
+</html>

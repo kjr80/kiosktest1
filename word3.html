@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+<!--Refreshes index.html after 180 seconds-->
+  <meta http-equiv="refresh" content="180;url=index.html">  
+<!--Creates 3s fade-in animation-->
+  <style>
+    body {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>  
+</head>
+
+<body>
+    <ul>
+        <li><a href="wordchoice.html">Back</a></li>
+    <li style="float:left"><p>L'appel du Vide</li>
+  </ul>
+
+  <h1>L'appel du Vide</h1>
+  <p>the call of the void, the tendency we have to entertain self-destructive thoughts</p>
+
+  <br>
+  <br>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <figure1>
+      <img src="bad1.jpg" style="width:100%">
+    <!--<div class="text">Caption Text</div>-->
+    </figure1>
+  </div>
+
+  <div class="mySlides fade">
+    <figure1>
+      <img src="bad2.jpg" style="width:100%">
+    <!--<div class="text">Caption Text</div>-->
+    </figure1>
+  </div>
+
+  <div class="mySlides fade">
+    <figure1>
+      <img src="bad3.jpg" style="width:100%">
+    <!--<div class="text">Caption Text</div>-->
+    </figure1>
+  </div>
+
+    </div>
+
+  <p1>You are hiking along a steep mountain path, and you find that you’ve come upon the edge of a cliff. For a split second, you think to yourself, what if I took just one extra step? Would it send me right over the edge of the cliff? You glance down at the dark, roaring waters below. What if you jumped? The whistle of a train off in the distance startles you. But then you can’t help but think … where are the train tracks? What if you stood on them, as the train approached, 700 tons of steel and metal speeding toward you … what would happen … how would it feel? You imagine driving over the train tracks instead. You hear the train’s whistle blaring, warning you to stop, but part of you wants to see if you can outrun it. You don’t really want to perish, but something inside you makes you think dangerously.</p1>
+  
+    <script>
+
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 8000); // Change image every 8 seconds
+      }
+      
+      </script>
+
+   
+
+</body>
+</html>
